@@ -9,7 +9,7 @@ output "random_pet_names" {
   value = random_pet.example[*].id
 }
 
-resource "random_pet" "name" {
+resource "random_pet" "name2" {
   count = 100
 
   length    = 3
