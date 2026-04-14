@@ -1,8 +1,8 @@
 resource "random_pet" "example" {
   count = 150
 
-  length    = 5
-  separator = "-"
+  length    = "2"
+  separator = "+"
 }
 
 output "random_pet_names" {
