@@ -1,16 +1,16 @@
-resource "random_pet" "example" {
-  count = 150
+resource "random_pet" "example1" {
+  count = 300
 
-  length    = "2"
-  separator = "-"
+  length    = "3"
+  separator = "+"
 }
 
 output "random_pet_names" {
   value = random_pet.example[*].id
 }
 
-resource "random_pet" "name2" {
-  count = 2
+resource "random_pet" "name7" {
+  count = 5
 
   length    = 3
   separator = "-"
