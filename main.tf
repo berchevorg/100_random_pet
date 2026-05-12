@@ -5,9 +5,9 @@ resource "random_pet" "example1" {
   separator = "+"
 }
 
-output "random_pet_names" {
-  value = random_pet.example1[*].id
-}
+#output "random_pet_names" {
+#  value = random_pet.example1[*].id
+#}
 
 resource "random_pet" "name7" {
   count = 5
@@ -16,6 +16,6 @@ resource "random_pet" "name7" {
   separator = "-"
 }
 
-output "random_pet_names7" {
-  value = random_pet.name7[*].id
-}
+#output "random_pet_names7" {
+#  value = random_pet.name7[*].id
+#}
