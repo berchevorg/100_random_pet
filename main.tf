@@ -17,5 +17,5 @@ resource "random_pet" "name7" {
 }
 
 output "random_pet_names7" {
-  value = random_pet.name2[*].id
+  value = random_pet.name7[*].id
 }
